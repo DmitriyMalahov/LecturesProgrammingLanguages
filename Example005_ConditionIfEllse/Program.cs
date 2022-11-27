@@ -1,7 +1,7 @@
 ﻿Console.Write("Введите имя пользователя: ");
 string userName = Console.ReadLine();
 
-if(userName.ToLower() == "маша")
+if(userName.ToLower() == "маша") // .ToLower() - приравнивает все к нижнему регистру.
 {
     Console.WriteLine("Ура, это же МАША!!!");
 }
