@@ -11,7 +11,7 @@ void Method1()
 
 void Method2(string msg)
 {
-        Console.WriteLine(msg);
+    Console.WriteLine(msg);
 }
 // Method2(msg: "Текст сообщения"); // Method2("Текст сообщения");
 
@@ -40,18 +40,40 @@ int year = Metohod3();
 
 // 4 Вид. Который и принимаю и возврвщвют что то.
 
+// string Method4(int count, string text)
+// {
+//     int i = 0;
+//     string result = String.Empty; //  string result = "";
+
+//     while (i < count)
+//     {
+//         result = result + text;
+//         i++;
+//     }
+//     return result;
+// }
+
 string Method4(int count, string text)
 {
-    int i = 0;
-    string result = String.Empty; //  string result = "";
+    string result = String.Empty;
 
-    while (i < count)
+    for (int i = 0; i < count; i++)
     {
         result = result + text;
-        i++;
     }
+
     return result;
 }
 
 string res = Method4(10, "z ");
-Console.WriteLine(res);
+// Console.WriteLine(res);
+
+
+for (int i = 2; i <= 10; i++)
+{
+    for (int j = 2; j <= 10; j++)
+    {
+        Console.WriteLine($"{i} x {j} = {i * j}");
+    }
+    Console.WriteLine();
+}
